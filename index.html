@@ -18,10 +18,14 @@
         <!-- show the prof data in 'collection' array -->
         <ul>
             <li v-for= "prof in professors"> <!-- this 'collection' means main.js 'data'-'collection' -->
-                <p v-on:click="logClicked">Prof Name: {{ prof.name }}, Role: {{ prof.role }}</p>
-                <a href="" class="remove-prof">Remove {{ prof.name}}</a> <!-- :href="" -->
+                <p>Prof Name: {{ prof.name }}, Role: {{ prof.role }}</p>
+                <a href="" class="remove-prof" @click.prevent="removeProf(prof)" v-bind:class="{'prof-button-modifier' : removeAformat}">Remove {{prof.name}}</a> <!-- :href="" -->
             </li>
         </ul>
+
+        <section class="bio-data" :class="{'show-bio' : showBioData}">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ab in sequi corporis vitae optio? Adipisci impedit, voluptatum consequuntur similique nobis perspiciatis ipsam, quidem aut hic laudantium necessitatibus distinctio ipsa.</p>
+        </section>
     </main>
 </body>
     

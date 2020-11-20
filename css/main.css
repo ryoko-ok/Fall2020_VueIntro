@@ -11,4 +11,16 @@
   background-color: blue;
 }
 
+.prof-button-modifier {
+  text-decoration: none;
+}
+
+.bio-data {
+  display: none;
+}
+
+.show-bio {
+  display: block !important;
+}
+
 /*# sourceMappingURL=main.css.map */
