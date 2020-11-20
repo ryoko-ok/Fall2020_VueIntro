@@ -1,0 +1,24 @@
+{
+  "name": "Fall2020_VueIntro",
+  "version": "1.0.0",
+  "description": "Working with a lightweight from end fremework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryoko-ok/Fall2020_VueIntro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryoko-ok/Fall2020_VueIntro/issues"
+  },
+  "homepage": "https://github.com/ryoko-ok/Fall2020_VueIntro#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
