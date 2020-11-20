@@ -6,6 +6,8 @@
         data: {
             message: "Hello from Vue!",
             anotherMessage: "This is some sample text",
+            removeAformat:true,
+            showBioData: false,
 
             professors: [
                 { name: "Justin", role: "coordinator", nickname: "nitsuJ"},
@@ -23,6 +25,11 @@
             // alert("you added Jarrod!")
         },
 
+        // run a method when we change our view (update the DOM with Vue)
+        updated: function() {
+            console.log('Vue just updated the DOM');
+        },
+
         methods: {
             logClicked() {
                 console.log("clicked on a prof name");
@@ -30,6 +37,15 @@
 
             clickHeader(){
                 console.log("clicked on the header");
+            },
+
+            removeProf(target) {
+                // remove this prof from the proffessors array
+                console.log('clicked to remove prof', target, target.name);
+                // the "this" keyword inside a vue instance REFERS to the Vue instance itself by default
+
+                //toggle the propety between true and false using a ternary statement
+                this.showBioData = this.showBioData ? false : true
             }
         }
     }).$mount("#app"); // also connects Vue to your wrapper in HTML, same as el

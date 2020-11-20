@@ -12,3 +12,10 @@
         background-color: blue;
     }
 }
+
+.prof-button-modifier { text-decoration: none; }
+
+.bio-data { display: none; }
+
+// !important = first priority
+.show-bio { display: block !important; }
