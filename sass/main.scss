@@ -1,21 +1,2 @@
-.remove-prof {
-    padding: 8px 12px;
-    color: white;
-    background-color: #333;
-    border: thin solid blue;
-    text-transform: uppercase;
-    cursor: pointer;
+@import "components/_profesection.scss";
 
-    border-radius: 8px;
-
-    &:hover {
-        background-color: blue;
-    }
-}
-
-.prof-button-modifier { text-decoration: none; }
-
-.bio-data { display: none; }
-
-// !important = first priority
-.show-bio { display: block !important; }
